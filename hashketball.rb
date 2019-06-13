@@ -165,4 +165,10 @@ def team_names
   return teams
 end
 
-team_names
+def player_numbers(team_name)
+  player_numbers_array = []
+  game_hash.each do |team, details|
+
+  end
+end
+player_numbers("Brooklyn Nets")
