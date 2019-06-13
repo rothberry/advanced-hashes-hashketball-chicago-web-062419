@@ -226,4 +226,4 @@ away_points = 0
 end
 
 
-big_shoe_rebounds
+most_points_scored
