@@ -173,12 +173,22 @@ numbers_array = []
       details[:players].each do |x|
       #binding.pry
       numbers_array << x[x.keys.join][:number]
-
     end
-      #binding.pry
     end
   end
   numbers_array
 end
 
-player_numbers("Brooklyn Nets")
+def player_stats(player_name)
+  game_hash.each do |team, players|
+      players[:players].each do |x|
+      binding.pry
+      if x.has_key?(player_name)
+        return x
+      end
+      #binding.pry
+    end
+  end
+end
+
+player_stats("Jeff Adrien")
