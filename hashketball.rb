@@ -166,11 +166,14 @@ def team_names
 end
 
 def player_numbers(team_name)
+numbers_array = []
   game_hash.each do |team, details|
     binding.pry
     if team_name == details[:team_name]
       details[:players].each do |x|
       binding.pry
+      numbers_array << x[x.keys.join][:number]
+
     end
       #binding.pry
     end
