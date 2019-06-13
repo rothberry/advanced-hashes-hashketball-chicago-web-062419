@@ -154,6 +154,7 @@ end
 # num_points_scored("Jeff Adrien")
 def num_points_scored (name)
   game_hash.each do |team, details|
+    binding.pry
     if details[:players].has_key?(name)
       return details[:players][name][:points]
     end
