@@ -265,5 +265,5 @@ player = nil
   end
   player
 end
-binding.pry
+#binding.pry
 player_with_longest_name
