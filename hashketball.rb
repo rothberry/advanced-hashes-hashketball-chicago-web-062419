@@ -151,7 +151,6 @@ end
 #     end
 #   end
 # end
-# num_points_scored("Jeff Adrien")
 def num_points_scored (name)
   game_hash.each do |team, details|
     binding.pry
@@ -160,3 +159,5 @@ def num_points_scored (name)
     end
   end
 end
+
+num_points_scored("Jeff Adrien")
