@@ -124,36 +124,18 @@ def game_hash
   }
 end
 
-# def num_points_scored(player_name)
-#   game_hash.each do |location, team_data|
-#     team_data.each do |attribute, data|
-#       if attribute == :players
-#         data.each do |x|
-#           if x[:player_name]
-#             return x[:points]
-#           end
-#         end
-#       end
-#     end
-#   end
-# end
 def num_points_scored(player_name)
-	game_hash.each do |location, team_data|
-		#iterating over the first layer
-	team_data.each do |k, v|
-		#iterating over the second layer
-		if k == :players
-			v.each do |x|
-			# iterated over array of players and then worked on value
-			# binding.pry
-			if x[:player_name] == player_name
-			# if a players_name equal to name that passed return number of points.
-			#finding player by name and returning points
-			return x[:points]
-			end
-		  end
-		end
-	  end
-	end
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |x|
+          if x[:player_name] == player_name
+            return x[:points]
+          end
+        end
+      end
+    end
+  end
 end
+
 #num_points_scored("Jeff Adrien")
