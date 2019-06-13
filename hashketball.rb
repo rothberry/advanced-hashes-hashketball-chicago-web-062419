@@ -265,3 +265,4 @@ player = nil
   end
   player
 end
+player_with_longest_name
