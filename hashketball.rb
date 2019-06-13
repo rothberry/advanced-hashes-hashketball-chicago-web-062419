@@ -254,7 +254,7 @@ most_char = 0
 player = nil
   game_hash.each do |team, details|
       details[:players].each do |x|
-        binding.pry
+        #binding.pry
         if x.keys.join.length > most_char
           most_char = x.leys.join.length
           player = x.keys.join
