@@ -131,7 +131,7 @@ def good_practices
     team_data.each do |attribute, data|
       #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
       binding.pry
- 
+
       #what is 'data' at each loop throughout .each block? when will the following line of code work and when will it break?
       data.each do |data_item|
           binding.pry
