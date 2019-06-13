@@ -235,10 +235,8 @@ away_points = 0
     #binding.pry
     if team == :home
       details[:players].each do |x|
-        binding.pry
-          home_points = x[x.keys.join][:points]
-          player = x.keys.join
-          #binding.pry
+          home_points += x[x.keys.join][:points]
+          binding.pry
         end
       #binding.pry
     end
