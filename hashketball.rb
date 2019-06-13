@@ -233,9 +233,10 @@ home_points = 0
 away_points = 0
   game_hash.each do |team, details|
     binding.pry
+    if team == :home
       details[:players].each do |x|
-        if x[x.keys.join][:points] > most_points
-          most_points = x[x.keys.join][:points]
+        binding.pry
+          home_points = x[x.keys.join][:points]
           player = x.keys.join
           #binding.pry
         end
