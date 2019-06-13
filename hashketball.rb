@@ -184,11 +184,11 @@ def player_stats(player_name)
       players[:players].each do |x|
       #binding.pry
       if x.has_key?(player_name)
-        return x
+        return x[player_name]
       end
       #binding.pry
     end
   end
 end
 
-player_stats("Jeff Adrien")
+player_numbers("Brooklyn Nets")
