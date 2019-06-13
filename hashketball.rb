@@ -228,11 +228,4 @@ player = nil
   player
 end
 
-def winning_team
-  home_points = 0
-  away_points = 0
-
-
-end
-
 winning_team
