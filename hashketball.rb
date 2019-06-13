@@ -228,7 +228,7 @@ player = nil
   player
 end
 
-def most_points_scored
+def winning_team
 home_points = 0
 away_points = 0
   game_hash.each do |team, details|
