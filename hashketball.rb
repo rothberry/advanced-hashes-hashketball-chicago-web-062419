@@ -255,8 +255,8 @@ player = nil
   game_hash.each do |team, details|
       details[:players].each do |x|
         binding.pry
-        if x[x.keys.join][:points] > most_points
-          most_points = x[x.keys.join][:points]
+        if x.keys.join.length > most_char
+          most_char = x.leys.join.length
           player = x.keys.join
           #binding.pry
         end
@@ -265,4 +265,5 @@ player = nil
   end
   player
 end
+binding.pry
 player_with_longest_name
