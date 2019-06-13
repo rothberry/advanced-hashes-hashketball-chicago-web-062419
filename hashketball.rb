@@ -145,7 +145,7 @@ def num_points_scored(player_name)
       players[:players].each do |x|
       binding.pry
       if x.has_key?(player_name)
-        return [player_name][:points]
+        return x[player_name][:points]
       end
       #binding.pry
     end
