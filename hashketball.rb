@@ -232,8 +232,13 @@ def winning_team
   home_points = 0
   away_points = 0
   game_hash.each do |team, details|
-    details.[:players].each do |x|
-      binding.pry
+      details[:players].each do |x|
+        if x[x.keys.join][:points] > most_points
+          most_points = x[x.keys.join][:points]
+          player = x.keys.join
+          #binding.pry
+        end
+      #binding.pry
     end
   end
 end
