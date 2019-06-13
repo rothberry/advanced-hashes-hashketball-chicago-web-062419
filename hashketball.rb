@@ -200,6 +200,7 @@ def big_shoe_rebounds
       x.each do |stats, value|
         #binding.pry
         if value[:shoe] > shoe_size
+          binding.pry
           shoe_size = value[:shoe]
           rebounds = value[:rebounds]
         end
