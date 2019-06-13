@@ -130,7 +130,7 @@ def num_points_scored(player_name)
         # binding.pry
       if name.keys[0] == player_name
         binding.pry
-        return data[:points]
+        puts data[:points]
       end
     end
   end
