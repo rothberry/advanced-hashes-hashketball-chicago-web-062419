@@ -142,7 +142,7 @@ def num_points_scored(player_name)
 		#iterating over the first layer
 	team_data.each do |k, v|
 		#iterating over the second layer
-		if k == :players 
+		if k == :players
 			v.each do |x|
 			# iterated over array of players and then worked on value
 			# binding.pry
