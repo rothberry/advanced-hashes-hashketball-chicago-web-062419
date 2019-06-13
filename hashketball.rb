@@ -266,7 +266,7 @@ player = nil
   player
 end
 #binding.pry
-def long_name_steals_a_ton
+def long_name_steals_a_ton?
   most_steals = 0
   player = nil
     game_hash.each do |team, details|
@@ -281,4 +281,4 @@ def long_name_steals_a_ton
     #binding.pry
     return player == player_with_longest_name
 end
-long_name_steals_a_ton
+long_name_steals_a_ton?
