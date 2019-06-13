@@ -147,7 +147,7 @@ def num_points_scored(player_name)
       if x.has_key?(player_name)
         return [player_name][:points]
       end
-      binding.pry
+      #binding.pry
     end
   end
 end
