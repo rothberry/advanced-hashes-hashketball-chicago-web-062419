@@ -182,7 +182,7 @@ end
 def player_stats(player_name)
   game_hash.each do |team, players|
       players[:players].each do |x|
-      binding.pry
+      #binding.pry
       if x.has_key?(player_name)
         return x
       end
