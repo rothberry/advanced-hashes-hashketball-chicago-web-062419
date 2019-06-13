@@ -220,9 +220,9 @@ player = nil
         if x[x.keys.join][:points] > most_points
           most_points = x[x.keys.join][:points]
           player = x.keys.join
-          binding.pry
+          #binding.pry
         end
-      binding.pry
+      #binding.pry
     end
   end
   player
