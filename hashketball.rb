@@ -212,4 +212,18 @@ def big_shoe_rebounds
   return rebounds
 end
 
+def most_points_scored
+home_points = 0
+away_points = 0
+  game_hash.each do |team, details|
+    binding.pry  
+      details[:players].each do |x|
+      #binding.pry
+      numbers_array << x[x.keys.join][:number]
+    end
+  end
+  numbers_array
+end
+
+
 big_shoe_rebounds
