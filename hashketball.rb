@@ -136,4 +136,4 @@ def num_points_scored(player_name)
   end
 end
 
-puts num_points_scored("Jason Terry")
+num_points_scored("Jason Terry")
