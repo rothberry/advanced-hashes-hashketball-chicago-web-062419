@@ -192,11 +192,17 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  shoe_size = 0
+  rebounds = 0
   game_hash.each do |team, players|
       players[:players].each do |x|
       #binding.pry
       x.each do |stats, value|
         binding.pry
+        if value[:shoe] > shoe_size
+          shoe_size = value[:shoe]
+          rebounds = value[:rebounds]
+        end
         # if x.has_key?(player_name)
         #   return x[player_name][:shoe]
         # end
