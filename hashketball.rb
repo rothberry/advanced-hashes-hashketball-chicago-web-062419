@@ -203,14 +203,11 @@ def big_shoe_rebounds
           shoe_size = value[:shoe]
           rebounds = value[:rebounds]
         end
-        # if x.has_key?(player_name)
-        #   return x[player_name][:shoe]
-        # end
       end
-
-      #binding.pry
     end
   end
+  return shoe_size
+  return rebounds
 end
 
 big_shoe_rebounds
