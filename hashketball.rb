@@ -161,4 +161,4 @@ def team_names
     binding.pry
   end
 end
-team_colors("Brooklyn Nets")
+team_names
