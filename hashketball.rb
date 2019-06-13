@@ -274,10 +274,10 @@ def long_name_steals_a_ton
           if x[x.keys.join][:steals] > most_steals
             most_steals = x[x.keys.join][:steals]
             player = x.keys.join
-            #binding.pry
+            binding.pry
           end
-        #binding.pry
       end
     end
+    binding.pry
     player == player_with_longest_name
 end
