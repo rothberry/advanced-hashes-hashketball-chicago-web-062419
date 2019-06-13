@@ -256,7 +256,7 @@ player = nil
       details[:players].each do |x|
         #binding.pry
         if x.keys.join.length > most_char
-          most_char = x.leys.join.length
+          most_char = x.keys.join.length
           player = x.keys.join
           #binding.pry
         end
