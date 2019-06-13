@@ -248,5 +248,21 @@ away_points = 0
   end
   home_points > away_points ? game_hash[:home][:team_name] : game_hash[:away][:team_name]
 end
-#binding.pry
-winning_team
+
+def player_with_longest_name
+most_char = 0
+player = nil
+  game_hash.each do |team, details|
+      details[:players].each do |x|
+        binding.pry
+        if x[x.keys.join][:points] > most_points
+          most_points = x[x.keys.join][:points]
+          player = x.keys.join
+          #binding.pry
+        end
+      #binding.pry
+    end
+  end
+  player
+end
+
