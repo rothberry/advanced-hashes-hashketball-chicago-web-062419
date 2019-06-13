@@ -202,12 +202,12 @@ def big_shoe_rebounds
         if value[:shoe] > shoe_size
           shoe_size = value[:shoe]
           rebounds = value[:rebounds]
-          binding.pry
+          #binding.pry
         end
       end
     end
   end
-  binding.pry
+  #binding.pry
   #return shoe_size
   return rebounds
 end
