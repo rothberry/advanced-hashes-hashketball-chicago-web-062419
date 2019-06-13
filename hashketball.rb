@@ -228,5 +228,14 @@ player = nil
   player
 end
 
+def winning_team
+  home_points = 0
+  away_points = 0
+  game_hash.each do |team, details|
+    details.[:players].each do |x|
+      binding.pry
+    end
+  end
+end
 
-most_points_scored
+winning_team
