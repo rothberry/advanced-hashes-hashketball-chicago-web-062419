@@ -166,9 +166,14 @@ def team_names
 end
 
 def player_numbers(team_name)
-  player_numbers_array = []
   game_hash.each do |team, details|
+    binding.pry
+      details[:players].each do |x|
+      binding.pry
 
+      #binding.pry
+    end
   end
 end
+
 player_numbers("Brooklyn Nets")
