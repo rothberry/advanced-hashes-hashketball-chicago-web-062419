@@ -238,10 +238,15 @@ away_points = 0
           home_points += x[x.keys.join][:points]
           binding.pry
         end
+    else
+      details[:players].each do |x|
+          away_points += x[x.keys.join][:points]
+          binding.pry
+        end
       #binding.pry
     end
   end
-  player
+  home_points > away_points ? game_hash[:home][:team_name] : game_hash[:away][:team_name]
 end
 
 winning_team
