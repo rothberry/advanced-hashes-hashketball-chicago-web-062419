@@ -124,20 +124,29 @@ def game_hash
   }
 end
 
+# def num_points_scored(player_name)
+#   game_hash.each do |location, team_data|
+#     team_data.each do |attribute, data|
+#       binding.pry
+#       if attribute == :players
+#         data.each do |x|
+#           if x[:player_name] == player_name
+#             binding.pry
+#             return x[:points]
+#           end
+#         end
+#       end
+#     end
+#   end
+# end
+
 def num_points_scored(player_name)
-  game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
-      binding.pry
-      if attribute == :players
-        data.each do |x|
-          if x[:player_name] == player_name
-            binding.pry
-            return x[:points]
-          end
-        end
+  game_hash.each do |team, players|
+    players[:players].each do |name, info|
+      if name == player_name
+        return info[:points]
       end
     end
   end
 end
-
 #num_points_scored("Jeff Adrien")
