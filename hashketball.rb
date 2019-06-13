@@ -178,6 +178,7 @@ numbers_array = []
       #binding.pry
     end
   end
+  numbers_array
 end
 
 player_numbers("Brooklyn Nets")
