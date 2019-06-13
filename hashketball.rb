@@ -236,12 +236,12 @@ away_points = 0
     if team == :home
       details[:players].each do |x|
           home_points += x[x.keys.join][:points]
-          binding.pry
+          #binding.pry
         end
     else
       details[:players].each do |x|
           away_points += x[x.keys.join][:points]
-          binding.pry
+          #binding.pry
         end
       #binding.pry
     end
