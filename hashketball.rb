@@ -125,11 +125,15 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.each do |team, players|
-    binding.pry
-    if players[:players].has_key?(player_name)
-      binding.pry
-      return players[:players][player_name][:points]
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |x|
+          if x[:player_name]
+            return x[:points]
+          end
+        end
+      end
     end
   end
 end
