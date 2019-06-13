@@ -194,7 +194,7 @@ end
 def big_shoe_rebounds
   game_hash.each do |team, players|
       players[:players].each do |x|
-      #binding.pry
+      binding.pry
       if x.has_key?(player_name)
         return x[player_name][:shoe]
       end
