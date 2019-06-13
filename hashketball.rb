@@ -213,16 +213,19 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-home_points = 0
-away_points = 0
+most_points = 0
+player = nil
   game_hash.each do |team, details|
-    #binding.pry
       details[:players].each do |x|
+        if x[x.keys.join][:points] > most_points
+          most_points = x[x.keys.join][:points]
+          player = x.keys.join
+          binding.pry
+        end
       binding.pry
-      numbers_array << x[x.keys.join][:number]
     end
   end
-  numbers_array
+  player
 end
 
 
