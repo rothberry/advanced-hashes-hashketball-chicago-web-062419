@@ -153,3 +153,4 @@ def team_colors(team)
     binding.pry
   end
 end
+team_colors("Brooklyn Nets")
